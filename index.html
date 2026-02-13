@@ -1,11 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BAG Studios</title>
+  <link rel="icon" href="images/Logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-    
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero" aria-label="Intro">
+      <div class="hero__panel">
+        <div class="hero__content">
+          <img class="hero__logo" src="images/ClearLogo.png" alt="Boring Arcade Studios logo" />
+
+          <p class="hero__headline">
+            We're a indie studio building satisfying gameplay.
+          </p>
+          <p class="hero__subheadline">
+            Our first title is a fast-paced <strong>hack &amp; slash</strong> focused on skill, flow, and style.
+          </p>
+
+          <div class="about-social-icons" aria-label="Social links">
+            <a href="mailto:boringarcadestudios@gmail.com" target="_blank" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://discord.gg/EjJ7VemSfY" target="_blank" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://www.instagram.com/boringarcade/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/bag_studio84646" target="_blank" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://github.com/BoringArcadeStudios" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section--about" id="about">
+      <div class="container about-center">
+        <h2 class="section__title">About</h2>
+        <p class="section__lead">
+          A combat-driven hack &amp; slash built around momentum, precision, and replayability.
+        </p>
+        <p class="section__text">
+          Chain combos, perfect your timing, and carve through enemies with a kit designed for expressive play.
+          No filler—just clean controls, responsive feedback, and fights that feel good to master.
+        </p>
+      </div>
+    </section>
+
+    <!-- Media -->
+    <section class="section section--media" id="media">
+      <div class="container">
+        <div class="media">
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/U0a-IE5xawo?rel=0&modestbranding=1&playsinline=1"
+              title="Gameplay video"
+              frameborder="0"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Game -->
+    <section class="section section--game" id="game">
+      <div class="container">
+        <div class="featureGrid">
+          <article class="card">
+            <h3 class="card__title">Combo Combat</h3>
+            <p class="card__text">Fast, readable attacks with cancels and timing windows that reward mastery.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Style &amp; Flow</h3>
+            <p class="card__text">Build momentum, keep pressure, and express your playstyle with clean movement.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Weapons &amp; Builds</h3>
+            <p class="card__text">Swap tools and perks to shape your damage, defense, and risk-reward choices.</p>
+          </article>
+        </div>
+
+        <div class="gallery" aria-label="Screenshots">
+          <figure class="shot">
+            <img src="images/Logo.png" alt="Gameplay screenshot 1" loading="lazy" />
+          </figure>
+          <figure class="shot">
+            <img src="images/Logo.png" alt="Gameplay screenshot 2" loading="lazy" />
+          </figure>
+          <figure class="shot">
+            <img src="images/Logo.png" alt="Gameplay screenshot 3" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="legal">
+    <small>© <span id="year"></span> Boring Arcade Studios. All rights reserved.</small>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
